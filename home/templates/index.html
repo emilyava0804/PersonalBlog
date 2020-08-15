@@ -5,10 +5,9 @@
 
 <div class="post-list">
 	{% for post in post_list %}
-	<div>
-		<h1>{{ post.title }}</h1>
-		<p>{{post.content|slice:":150"}}</p>
-		<a href="{% url 'post_detail' post.slug %}">Read More </a>
+	<div class="post" style="margin-bottom: 25px">
+		<h1 class="post-title">{{ post.title }}</h1>
+		<p>&emsp;&emsp;{{post.content|slice:":250"}} ... <a href="{% url 'post_detail' post.slug %}">Read More </a></p>
 	</div>
 	{% endfor %}
 </div>

@@ -1,3 +1,4 @@
+/* base.html stylings */
 .header {
 	height: 150px;
 	width: 100%;
@@ -28,13 +29,35 @@
 
 .directives {
 	text-align: right;
-	color: #43464B;
 	padding-top: 30px;
 	padding-right: 45px;
-	font-family:Trebuchet MS, sans-serif;
 }
 
 .content {
 	margin-left: 200px;
 	margin-top: 200px;
+	padding-right: 50px;
+	padding-left: 5px;
+}
+
+h1, h2, h3, p {
+	font-family:Trebuchet MS, sans-serif;
+	color: #43464B;
+}
+
+/* post list stylings */
+.post {
+	background-color: #F5F5F5;
+	border: solid;
+	border-color: gray;
+	border-radius: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 1px;
+}
+
+.post-title {
+	text-align: center;
+	text-decoration: underline gray;
 }
