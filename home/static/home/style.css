@@ -1,7 +1,40 @@
-body {
-	background-color: orange;
+.header {
+	height: 150px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+    right: 0;
+    top: 0;
+    background-color: #FFECF9;
 }
 
-div {
-	background-color: orange
+.row {
+	display: flex;
+}
+
+.logo {
+	height: 150px;
+}
+
+.sidebar {
+	height: 100%;
+	width: 150px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #FFECF9;
+}
+
+.directives {
+	text-align: right;
+	color: #43464B;
+	padding-top: 30px;
+	padding-right: 45px;
+	font-family:Trebuchet MS, sans-serif;
+}
+
+.content {
+	margin-left: 200px;
+	margin-top: 200px;
 }
