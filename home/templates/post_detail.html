@@ -2,6 +2,20 @@
 {% load static %}
 
 {% block content %}
+<!-- Navbar here -->
+
+
+<div class="header" style="border-bottom: double;">
+	<ul>
+		<li><a href="/" class="active">Home</a></li>
+		<li><a href="#" >Blog Posts</a></li>
+		<li><a href="#" >Gallery</a></li>
+		<li><a href="#" >About Me</a></li>
+	</ul>
+	<div class="sidebar" style="border-right: double;">
+		<img src="{% static 'home/images/mylogo.png' %}" id="Logo" alt="logo" class="logo">
+	</div>
+</div>
 
 <div class="post">
 	<h1 class="post-title">{% block title %} {{ object.title }} {% endblock title %}</h1>

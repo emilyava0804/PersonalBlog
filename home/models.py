@@ -23,3 +23,5 @@ class Post(models.Model):
 	#Shows each post by it's title rather than it's PK
 	def __str__(self):
 		return self.title
+
+

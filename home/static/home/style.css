@@ -1,12 +1,40 @@
 /* base.html stylings */
 .header {
-	height: 150px;
+	height: 20%;
 	width: 100%;
 	position: fixed;
 	left: 0;
     right: 0;
     top: 0;
     background-color: #FFECF9;
+}
+
+ul {
+	list-style-type: none;
+	margin-left: 750px;
+}
+
+li {
+	display: inline;
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	display: block;
+	padding: 50px;
+}
+
+li a.active {
+	background-color: #E776AB;
+	color: white;
+}
+
+li a:hover {
+	background-color: #FF99C8;
+	color: white;
 }
 
 .row {
@@ -27,12 +55,6 @@
 	background-color: #FFECF9;
 }
 
-.directives {
-	text-align: right;
-	padding-top: 30px;
-	padding-right: 45px;
-}
-
 .content {
 	margin-left: 200px;
 	margin-top: 200px;
@@ -40,7 +62,7 @@
 	padding-left: 5px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p, a {
 	font-family:Trebuchet MS, sans-serif;
 	color: #43464B;
 }
