@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--Header/navbar -->
+<div class="row">
+	<div class="header" style="border-bottom: double;">
+		<div class="col-header-1">
+			<img src="{% static 'home/images/mylogo.png' %}" id="Logo" alt="logo" class="logo">
+		</div>
+		<div class="col-header-2">
+			<ul>
+				<li><a href="/" class="active circle-bg">Home</a></li>
+				<li><a href="blog-list" class="circle-bg">Blog Posts</a></li>
+				<li><a href="#" class="circle-bg">Gallery</a></li>
+				<li><a href="about-me" class="circle-bg">About Me</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+
+</div>
+
+<div class="row" style="margin-left: 50px;">
+	<div class="col-1 home-div" style="margin-top: 50px;">
+			<h1>Hi, my name is Emily!</h1>
+			<h6 style="margin-left: 35%;">LadyDohahkiin - A Little Bit of Life</h6>
+			<h3>This is my space for sharing ideas, interests, and projects. </h3>
+	</div>
+	<div class="col-2">
+		<img src="{% static 'home/images/profile.jpg' %}" alt="profile-picture" class="profile" style="padding-left: 20px">
+	</div>
+	
+</div>
+
+{% endblock content %}

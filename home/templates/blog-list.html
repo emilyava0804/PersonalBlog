@@ -11,16 +11,23 @@
 		<div class="col-header-2">
 			<ul>
 				<li><a href="/" class="circle-bg">Home</a></li>
-				<li><a href="blog-list" class="circle-bg">Blog Posts</a></li>
+				<li><a href="blog-list" class="active circle-bg">Blog Posts</a></li>
 				<li><a href="#" class="circle-bg">Gallery</a></li>
-				<li><a href="about-me" class="active circle-bg">About Me</a></li>
+				<li><a href="about-me" class="circle-bg">About Me</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<div>
-	<h1>About me dummy data</h1>
+
+<div class="post-list">
+	{% for post in post_list %}
+	<div class="post" style="margin-bottom: 25px">
+		<h1 class="post-title">{{ post.title }}</h1>
+		<h4>Posted: {{ post.updated_on }}</h4>
+		<p>&emsp;&emsp;{{post.content|slice:":250"}} ... <a href="{% url 'post_detail' post.slug %}">Read More </a></p>
+	</div>
+	{% endfor %}
 </div>
 
 {% endblock content %}
