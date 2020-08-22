@@ -4,11 +4,11 @@
 {% block content %}
 <!--Header/navbar -->
 <div class="row">
-	<div class="header" style="border-bottom: double;">
-		<div class="col-header-1">
-			<img src="{% static 'home/images/mylogo.png' %}" id="Logo" alt="logo" class="logo">
+	<div class="header2">
+		<div class="col-test-1">
+			<img src="{% static 'home/images/logo-real.png' %}" id="Logo" alt="logo" class="logo">
 		</div>
-		<div class="col-header-2">
+		<div class="col-test-2" style="background-image: url('{% static 'home/images/botany/header.jpg' %}'); background-size: contain;">
 			<ul>
 				<li><a href="/" class="active circle-bg">Home</a></li>
 				<li><a href="blog-list" class="circle-bg">Blog Posts</a></li>
@@ -16,14 +16,13 @@
 				<li><a href="about-me" class="circle-bg">About Me</a></li>
 			</ul>
 		</div>
-	</div>
+	</div>	
 </div>
 	
 
-</div>
 
 <div class="row" style="margin-left: 50px;">
-	<div class="col-1 home-div" style="margin-top: 50px;">
+	<div class="col-1 home-div" style="margin-top: 50px; background-image: url('{% static 'home/images/botany/post-background.jpg' %}'); background-size: cover; opacity: 0.8;">
 			<h1>Hi, my name is Emily!</h1>
 			<h6 style="margin-left: 35%;">LadyDohahkiin - A Little Bit of Life</h6>
 			<h3>This is my space for sharing ideas, interests, and projects. </h3>
